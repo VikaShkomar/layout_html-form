@@ -13,5 +13,132 @@
   <body>
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+    method="POST" onsubmit="onSubmit()">
+<fieldset style="margin: 20px 0;" >
+  <legend>Personal information</legend>
+  <label for="Surname"> Surname:</label>
+    <input type="text" 
+            id="Surname" 
+            name="Personal_information" 
+            style="margin: 10px 0;" 
+            required></br>
+  
+    <label for="Name"> Name:</label>
+    <input type="text" 
+            id="Name" 
+            name="Personal_information" 
+            style="margin: 10px 0;" 
+            required></br>
+
+    <label for="HowOld"> How old are you?</label>
+    <input type="text" 
+            id="HowOld" 
+            name="Personal_information" 
+            value="12" 
+            max=100 
+            style="margin: 10px 0;" 
+            required></br>
+
+    <label for="fullDate"> Full date of birth:</label>
+    <input type="text" 
+            id="fullDate" 
+            name="Personal_information" 
+            placeholder="mm/dd/yyyy" 
+            style="margin: 10px 0;" 
+            required></br>
+
+    <label for="Check"> I accept the term of the agreement</label>
+    <input type="checkbox" 
+            id="Check" 
+            name="Personal_information"
+            style="margin: 10px 0;" 
+             required>
+</fieldset>
+
+<fieldset style="margin: 20px 0;" >
+  <legend>Registration</legend>
+
+  <label for="email"> E-mail:</label>
+  <input type="email" 
+          id="email" 
+          name="Registration" 
+          placeholder="email@example.com" 
+          style="margin: 10px 0;" 
+          required></br>
+  
+  <label for="password"> Password:</label>
+  <input type="password" 
+          id="password" 
+          name="Personal_information" 
+          style="margin: 10px 0;" 
+          required></br>
+</fieldset>
+
+<fieldset style="margin: 20px 0;" >
+<legend>An interesting fact about you!</legend>
+<div style="margin: 10px 0;" ></div>
+<label for="loveCats"> Do you love cats?
+  <input type="radio" 
+          id="loveCats" 
+          name="interestainFact"  
+          value="Yes"
+        >
+  Yes
+</label>
+<label for="loveCats" > 
+  <input type="radio" id="loveCats" name="interestainFact" value="No">
+  No
+</label>
+</div>
+
+</br>
+
+<label for="favoriteColor"> What is your favorite color?</label>
+<input type="color" 
+        id="favoriteColor" 
+        name="interestainFact" 
+        style="margin: 10px 0;" 
+        required></br>
+
+<label for="timeGoToBed"> What time do you go to bed?</label>
+<input type="time" 
+        id="timeGoToBed" 
+        name="interestainFact"
+        style="margin: 10px 0;"  ></br>
+
+<label for="favoriteBrandOfCars"> What are your favorite brand of cars?</label>
+<select name="interestainFact" id="favoriteBrandOfCars" style="margin: 10px 0;" multiple>
+    
+    <option value="BMW">BMW</option>
+    <option value="Audi">Audi</option>
+    <option value="Lada">Lada</option>
+    <option value=""></option>
+</select>
+</br>
+
+<label for="rateOurWork"> How do you rate our work</label>
+<input type="range" id="rateOurWork" name="interestainFact" style="margin: 10px 0;"  >
+</fieldset>
+
+<fieldset style="margin: 20px 0;" >
+<legend>Additional info:</legend>
+<div style="margin: 10px 0;">
+  <label > Comments</label>
+  <textarea name="addtionalInfo" rows="2" cols="15" ></textarea>
+</div>
+</br> 
+<label for="recomends"> Would you recommend us?</label>
+<input type="number" 
+        id="recomends" 
+        name="Personal_information" 
+        min="1" max="2" 
+        style="margin: 10px 0;" >
+
+</br>
+</fieldset>
+</br>
+</form>  
+<button type="submit">Submit</button>
   </body>
 </html>
